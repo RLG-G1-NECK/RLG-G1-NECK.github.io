@@ -1,0 +1,46 @@
+site_name: G1 Neck Docs
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Deployment: getting-started/deployment.md
+  - Hardware:
+    - Parts and BOM: hardware/parts-and-bom.md
+    - Assembly: hardware/assembly.md  
+    - Wiring: hardware/wiring.md  
+  - Troubleshooting: troubleshooting.md  
+
+theme:
+  name: readthedocs
+  custom_dir: theme_overrides
+
+extra_css:
+  - language-selector.css
+
+extra_javascript:
+  - copy-button.js  # copy button for code blocks
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+plugins:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+          nav_translations:
+            Home: ホーム
+            Getting Started: 始めに
+            Deployment: 実行
+            Troubleshooting: 問題解決
+            Hardware: ハードウェア
+            Parts and BOM: 部品
+            Wiring: 配線
+            Assembly: 組み立て

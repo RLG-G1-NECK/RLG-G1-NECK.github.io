@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{%- block site_nav %}
+  {{ super() }}
+
+  {%- if page and page.file.alternates %}
+  <div class="language-selector">
+    {%- for lang, file in page.file.alternates.items() | sort %}
+      {%- if lang != i18n_page_locale %}
+        <a href="{{ file.url | url }}">{% if lang == "en" %}English{% elif lang == "ja" %}日本語{% else %}{{ lang }}{% endif %}</a>
+      {%- endif %}
+    {%- endfor %}
+  </div>
+  {%- endif %}
+{% endblock %}
