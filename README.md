@@ -9,6 +9,12 @@ You can view the documentation locally by cloning the repository and viewing it 
 mkdocs serve
 ```
 
+## Deploying (GitHub pages)
+To update website, do
+```bash
+mkdocs gh-deploy
+```
+
 ## Dependencies
 This project depends on a few markdown and Mkdocs extenions, namely
 - `mkdocs-static-i18n` for multilangual capabilities 
