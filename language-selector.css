@@ -1,0 +1,73 @@
+/* Make sure language selector is located at the bottom of the page */
+.wy-side-scroll {
+    display: flex;
+    flex-direction: column;
+}
+.wy-menu.wy-menu-vertical {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.language-selector {
+    margin-top: auto;
+    padding: 10px 15px;
+    border-top: 1px solid #4e4a4a;
+}
+.language-selector a {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 0.9em;
+    color: #d9d9d9;
+}
+.language-selector a:last-child {
+    margin-right: 0;
+}
+.language-selector a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Copy-to-clipboard button for code blocks */
+.copy-button-wrapper {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 3px 8px;
+    font-size: 0.75em;
+    line-height: 1.4;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.copy-button-wrapper:hover .copy-button,
+.copy-button:focus {
+    opacity: 1;
+}
+
+.copy-button:hover {
+    background-color: #eee;
+}
+
+.copy-button-success {
+    color: #fff;
+    background-color: #2a9d3f;
+    border-color: #2a9d3f;
+    opacity: 1;
+}
+
+.copy-button-error {
+    color: #fff;
+    background-color: #c0392b;
+    border-color: #c0392b;
+    opacity: 1;
+}
