@@ -8,7 +8,8 @@ nav:
     - Parts and BOM: hardware/parts-and-bom.md
     - Assembly: hardware/assembly.md  
     - Wiring: hardware/wiring.md  
-  - Troubleshooting: troubleshooting.md  
+  - Troubleshooting:
+    - Common issues: troubleshooting.md  
 
 theme:
   name: readthedocs
@@ -23,6 +24,7 @@ extra_javascript:
 markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
+  - attr_list
 
 plugins:
   - i18n:
@@ -40,7 +42,8 @@ plugins:
             Getting Started: 始めに
             Deployment: 実行
             Troubleshooting: 問題解決
+            Common issues: よくある問題
             Hardware: ハードウェア
-            Parts and BOM: 部品
+            Parts and BOM: 部品表
             Wiring: 配線
             Assembly: 組み立て

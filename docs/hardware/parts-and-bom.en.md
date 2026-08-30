@@ -31,6 +31,7 @@ Do this if possible.
 
 ## Configurations
 There are two configurations for two camera supported types: 
+
 - Accuvision HighPS Mini camera
 - Tier IV C1 camera
 

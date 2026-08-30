@@ -12,5 +12,5 @@ to be fitted onto the [Unitree G1 humanoid](https://www.unitree.com/g1).
 If you have received the develepment kit, please proceed to the [Deployment page](getting-started/deployment.md). 
 Otherwise,　follow the Installation guide.
 
-The mechanical details (design decisions, 3d printing instructions, wiring diagram, and assembly guide) may be
-found in the Mechanical page. The software details may be found in the Software page.
+The mechanical details (3d printing instructions, wiring diagram, and assembly guide)
+may be found in the Hardware section. The software details may be found in the Software page.
