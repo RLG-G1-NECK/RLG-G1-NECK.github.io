@@ -43,6 +43,8 @@
               </ul>
               <p class="caption"><span class="caption-text">始めに</span></p>
               <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">インストール</a>
+                  </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">実行</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#pc-bringup">PCの起動</a>
@@ -95,8 +97,8 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="rlg-g1-neck">RLG G1 Neckの実行方法</h1>
-<p>このガイドは、開発キットを受け取っているか、インストール手順に従ってG1 Neckソフトウェアスタックが
-システムにインストールされ、配線ガイドに従ってすべての配線が完了している状態を前提としています。</p>
+<p>このガイドは、開発キットを受け取っているか、<a href="../installation/">インストール手順</a>に従ってG1 Neckソフトウェアスタックが
+システムにインストールされ、<a href="../../hardware/wiring/">配線ガイド</a>に従ってすべての配線が完了している状態を前提としています。</p>
 <p>これには2つの側面があります: PC(jetson)側とヘッドセット側です。まずPCスタックを起動し、
 CloudXRサービスを立ち上げる必要があります。</p>
 <p>その後、CloudXRサービスを通じてヘッドセットをPCに接続し、ヘッドトラッキングとカメラ映像を取得できます。</p>
@@ -110,7 +112,7 @@ CloudXRサービスを立ち上げる必要があります。</p>
    <strong>デコーダーが設定データを保存できるようになるまでは、電源を再接続するたびにこの操作を行う必要があります。</strong></li>
 <li>マイクロUSBケーブルを左カメラデコーダーのUARTポートに接続します。</li>
 <li><code>gtkterm</code>を開きます。インストールされていない場合は、<code>sudo apt install gtkterm</code>でインストールしてください。</li>
-<li>デコーダーに接続されているポートを選択します。通常は<code>/dev/ttyUSB0</code>です。ボーレートを115200に設定します。</li>
+<li>デコーダーに接続されているポートを選択します。通常は<code>/dev/ttyUSB0</code>です。ボーレートを<code>115200</code>に設定します。</li>
 <li><code>p</code>を押してピッチ角度を選択します。</li>
 <li><code>130</code>と入力してから<code>enter</code>を押して13度を入力します。</li>
 <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>を押して新しいターミナルを開きます。</li>
@@ -125,7 +127,7 @@ CloudXRサービスを立ち上げる必要があります。</p>
 </code></pre></div>
    これにより、CloudXRサービスが自動的に開始され、G1 Neckスタック全体が起動します。</li>
 </ol>
-<p>おめでとうございます!PC側で行うことはこれですべてです。次はヘッドセット側です。</p>
+<p>おめでとうございます！PC側で行うことはこれですべてです。次はヘッドセット側です。</p>
 <h2 id="pc">ヘッドセットとPCの接続</h2>
 <p>このセクションは<a href="https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset">NVIDIAの公式ガイド</a>
 とほぼ同じ内容です。
@@ -163,7 +165,7 @@ CloudXRサービスを立ち上げる必要があります。</p>
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="フッターナビゲーション">
-        <a href="../../" class="btn btn-neutral float-left" title="ホーム"><span class="icon icon-circle-arrow-left"></span> 前へ</a>
+        <a href="../installation/" class="btn btn-neutral float-left" title="インストール"><span class="icon icon-circle-arrow-left"></span> 前へ</a>
         <a href="../../hardware/parts-and-bom/" class="btn btn-neutral float-right" title="部品表">次へ <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -187,7 +189,7 @@ CloudXRサービスを立ち上げる必要があります。</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../" style="color: #fcfcfc">&laquo; 前へ</a></span>
+      <span><a href="../installation/" style="color: #fcfcfc">&laquo; 前へ</a></span>
     
     
       <span><a href="../../hardware/parts-and-bom/" style="color: #fcfcfc">次へ &raquo;</a></span>

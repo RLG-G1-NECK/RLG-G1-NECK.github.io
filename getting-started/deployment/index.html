@@ -43,6 +43,8 @@
               </ul>
               <p class="caption"><span class="caption-text">Getting Started</span></p>
               <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                  </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Deployment</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#pc-bringup">PC Bringup</a>
@@ -96,9 +98,9 @@
               
                 <h1 id="deploying-the-rlg-g1-neck">Deploying the RLG G1 Neck</h1>
 <p>This guide assumes you have received the development kit, or have followed
-the installation instructions to reach the point where the G1 Neck software
+the <a href="../installation/">installation instructions</a> to reach the point where the G1 Neck software
 stack is installed on your system, and have wired everything together using
-the wiring guide.</p>
+the <a href="../../hardware/wiring/">wiring guide</a>.</p>
 <p>There are two sides to this: The PC (jetson) side and the headset side. You will
 first need to bring up the PC stack, which will launch the CloudXR service.</p>
 <p>Then, you can connect the headset to the PC through the CloudXR service
@@ -114,7 +116,7 @@ and get head tracking and a camera stream.</p>
    operation. <strong>Until the decoder is able to save config data, this will need to be performed every time power is reconnected.</strong></li>
 <li>Connect a micro USB cable to left camera decoder's UART port.</li>
 <li>Open <code>gtkterm</code>. If it is not installed, install it via <code>sudo apt install gtkterm</code></li>
-<li>Select the port connected to the decoder. This is usually <code>/dev/ttyUSB0</code>. Set the baudrate to 115200.</li>
+<li>Select the port connected to the decoder. This is usually <code>/dev/ttyUSB0</code>. Set the baudrate to <code>115200</code>.</li>
 <li>Select pitch angle by pressing <code>p</code></li>
 <li>Enter 13 degrees by entering <code>130</code> then <code>enter</code></li>
 <li>Open a new terminal by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd></li>
@@ -167,7 +169,7 @@ will need to reapply the configuration every time power is reconnected.</strong>
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../installation/" class="btn btn-neutral float-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../../hardware/parts-and-bom/" class="btn btn-neutral float-right" title="Parts and BOM">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -191,7 +193,7 @@ will need to reapply the configuration every time power is reconnected.</strong>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../installation/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../../hardware/parts-and-bom/" style="color: #fcfcfc">Next &raquo;</a></span>
