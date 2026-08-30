@@ -1,9 +1,9 @@
 # Deploying the RLG G1 Neck
 
 This guide assumes you have received the development kit, or have followed
-the installation instructions to reach the point where the G1 Neck software
+the [installation instructions](installation.md) to reach the point where the G1 Neck software
 stack is installed on your system, and have wired everything together using
-the wiring guide.
+the [wiring guide](../hardware/wiring.md).
 
 There are two sides to this: The PC (jetson) side and the headset side. You will
 first need to bring up the PC stack, which will launch the CloudXR service.
@@ -22,7 +22,7 @@ Before you start, **ensure your PC and headset are on the same network.**
    operation. **Until the decoder is able to save config data, this will need to be performed every time power is reconnected.**
    1. Connect a micro USB cable to left camera decoder's UART port.
    2. Open `gtkterm`. If it is not installed, install it via `sudo apt install gtkterm`
-   3. Select the port connected to the decoder. This is usually `/dev/ttyUSB0`. Set the baudrate to 115200.
+   3. Select the port connected to the decoder. This is usually `/dev/ttyUSB0`. Set the baudrate to `115200`.
    4. Select pitch angle by pressing `p`
    5. Enter 13 degrees by entering `130` then `enter`
 3. Open a new terminal by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>

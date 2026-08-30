@@ -3,6 +3,7 @@ site_name: G1 Neck Docs
 nav:
   - Home: index.md
   - Getting Started:
+    - Installation: getting-started/installation.md
     - Deployment: getting-started/deployment.md
   - Hardware:
     - Parts and BOM: hardware/parts-and-bom.md
@@ -40,6 +41,7 @@ plugins:
           nav_translations:
             Home: ホーム
             Getting Started: 始めに
+            Installation: インストール
             Deployment: 実行
             Troubleshooting: 問題解決
             Common issues: よくある問題
