@@ -130,11 +130,12 @@ CloudXRサービスを立ち上げる必要があります。</p>
 <p>おめでとうございます！PC側で行うことはこれですべてです。次はヘッドセット側です。</p>
 <h2 id="pc">ヘッドセットとPCの接続</h2>
 <p>このセクションは<a href="https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset">NVIDIAの公式ガイド</a>
-とほぼ同じ内容です。
-1. ヘッドセット側でブラウザを開き、<a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a>にアクセスします。
-2. ホストPCがJetsonの場合、サイドパネルで動画コーデックを<code>H.265</code>に設定してください。
-   <img alt="Codec Selection" src="../../../assets/codec_selection.png" />
-3. Server IPの欄にPCのIPアドレスを入力します。
+とほぼ同じ内容です。</p>
+<ol>
+<li>ヘッドセット側でブラウザを開き、<a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a>にアクセスします。</li>
+<li>ホストPCがJetsonの場合、サイドパネルで動画コーデックを<code>H.265</code>に設定してください。
+   <img alt="Codec Selection" src="../../../assets/codec_selection.png" /></li>
+<li>Server IPの欄にPCのIPアドレスを入力します。
    <img alt="IP Input" src="../../../assets/ip_input.png" />
    自分のIPアドレスが分からない場合は、デスクトップのWi-Fi設定から確認できます。
    <img alt="Wifi Selection" src="../../../assets/network_selection.png" />
@@ -142,7 +143,8 @@ CloudXRサービスを立ち上げる必要があります。</p>
    ターミナルを使い慣れている場合は、
    <div class="highlight"><pre><span></span><code>ip<span class="w"> </span>address
 </code></pre></div>
-   でも確認できます。</p>
+   でも確認できます。</li>
+</ol>
 <h1 id="stoppingrestarting-the-stack">スタックの停止・再起動</h1>
 <p>G1 Neckスタックを実行しているターミナルで<kbd>Ctrl</kbd>+<kbd>c</kbd>を押すとスタックが停止します。再起動するには、
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>twist2_neck_ros2<span class="w"> </span>twist2_neck.launch.py

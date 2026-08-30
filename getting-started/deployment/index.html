@@ -133,11 +133,12 @@ and get head tracking and a camera stream.</p>
 </ol>
 <p>Congratulations! That's all there is to do on the PC side. Now for the headset part</p>
 <h2 id="headset-to-pc">Headset to PC</h2>
-<p>This section is practically identical to <a href="https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset">NVIDIA's official guide</a>.
-1. On the headset, open the browser and navigate to <a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a>
-2. If your host PC is a Jetson, set <code>H.265</code> as your video codec on the side panel.
-   <img alt="Codec Selection" src="../../assets/codec_selection.png" />
-3. Enter the ip address of your pc inside of the Server IP box.
+<p>This section is practically identical to <a href="https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset">NVIDIA's official guide</a>.</p>
+<ol>
+<li>On the headset, open the browser and navigate to <a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a></li>
+<li>If your host PC is a Jetson, set <code>H.265</code> as your video codec on the side panel.
+   <img alt="Codec Selection" src="../../assets/codec_selection.png" /></li>
+<li>Enter the ip address of your pc inside of the Server IP box.
    <img alt="IP Input" src="../../assets/ip_input.png" />
    If you don't know what your ip is, you can find it through the wifi settings on your desktop,
    <img alt="Wifi Selection" src="../../assets/network_selection.png" />
@@ -145,7 +146,8 @@ and get head tracking and a camera stream.</p>
    or if you prefer the terminal and have some experience with linux command line tools,
    <div class="highlight"><pre><span></span><code>ip<span class="w"> </span>address
 </code></pre></div>
-   works as well.</p>
+   works as well.</li>
+</ol>
 <h1 id="stoppingrestarting-the-stack">Stopping/Restarting the stack</h1>
 <p>Pressing <kb>Ctrl</kb>+<kb>c</kb> in the terminal that is running the G1 Neck stack will stop the stack. To relaunch, run
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>twist2_neck_ros2<span class="w"> </span>twist2_neck.launch.py
