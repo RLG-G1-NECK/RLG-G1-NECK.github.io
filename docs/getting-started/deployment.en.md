@@ -44,6 +44,7 @@ Congratulations! That's all there is to do on the PC side. Now for the headset p
 
 ## Headset to PC
 This section is practically identical to [NVIDIA's official guide](https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset).
+
 1. On the headset, open the browser and navigate to [https://nvidia.github.io/IsaacTeleop/client/main/](https://nvidia.github.io/IsaacTeleop/client/main/)
 2. If your host PC is a Jetson, set `H.265` as your video codec on the side panel.
    ![Codec Selection](../assets/codec_selection.png)

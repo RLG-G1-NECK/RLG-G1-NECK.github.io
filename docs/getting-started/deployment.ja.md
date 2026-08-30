@@ -41,6 +41,7 @@ CloudXRサービスを立ち上げる必要があります。
 ## ヘッドセットとPCの接続
 このセクションは[NVIDIAの公式ガイド](https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset)
 とほぼ同じ内容です。
+
 1. ヘッドセット側でブラウザを開き、[https://nvidia.github.io/IsaacTeleop/client/main/](https://nvidia.github.io/IsaacTeleop/client/main/)にアクセスします。
 2. ホストPCがJetsonの場合、サイドパネルで動画コーデックを`H.265`に設定してください。
    ![Codec Selection](../assets/codec_selection.png)
