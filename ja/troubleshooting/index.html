@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>問題解決 - G1 Neck Docs</title>
+    <title>よくある問題 - G1 Neck Docs</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u554f\u984c\u89e3\u6c7a";
-        var mkdocs_page_input_path = "troubleshooting.en.md";
+        var mkdocs_page_name = "\u3088\u304f\u3042\u308b\u554f\u984c";
+        var mkdocs_page_input_path = "troubleshooting.ja.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -48,32 +48,33 @@
               </ul>
               <p class="caption"><span class="caption-text">ハードウェア</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../hardware/parts-and-bom/">部品</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../hardware/parts-and-bom/">部品表</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../hardware/assembly/">組み立て</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../hardware/wiring/">配線</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">問題解決</span></p>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">問題解決</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">よくある問題</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#teleop-session-not-starting-despite-headset-connection">Teleop session not starting despite headset connection</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">ヘッドセットが接続されているのにテレオペレーションセッションが開始しない</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#video-feed-feels-disorienting">Video feed feels disorienting</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">映像に違和感がある</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#swapped-camera-feeds">Swapped camera feeds</a>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">カメラ映像の入れ替わり</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#misaligned-feeds">Misaligned feeds</a>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">映像のずれ</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#feed-only-on-one-side">Feed only on one side</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">片方の映像しか表示されない</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#feed-works-but-head-is-not-moving">Feed works but head is not moving</a>
+    <li class="toctree-l2"><a class="reference internal" href="#_7">映像は表示されるがヘッドが動かない</a>
     </li>
     </ul>
-                </li>
+                  </li>
               </ul>
   <div class="language-selector">
         <a href="../../troubleshooting/">English</a>
@@ -93,7 +94,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../" class="icon icon-home" aria-label="ドキュメント"></a></li>
-      <li class="breadcrumb-item active">問題解決</li>
+          <li class="breadcrumb-item">問題解決</li>
+      <li class="breadcrumb-item active">よくある問題</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,63 +104,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="troubleshooting">Troubleshooting</h1>
-<p>There are a few common issues that may arise when running the teleop
-session. Here is a list of the known ones.</p>
-<h2 id="teleop-session-not-starting-despite-headset-connection">Teleop session not starting despite headset connection</h2>
-<p>Steps you took:
-- You ran the ROS2 launchfile
-- You went to the <a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a> website and hit connect
-The effect:
-- The browser ui dissappears, but the head tracking does not work and no camera stream is visible
-- The controller model is not rendered
-- The "show" button is not rendered
-Fix:
-- Quit the browser client on the headset and try reconnecting. This usually works in one try</p>
-<h2 id="video-feed-feels-disorienting">Video feed feels disorienting</h2>
-<p>There are two possibilities:
-- Your left and right camera feeds are swapped
-- Your feeds are misaligned
-- One of your feeds is not ready</p>
-<h3 id="swapped-camera-feeds">Swapped camera feeds</h3>
-<p>Navigate to your workspace folder (<code>/workspaces/twist2_neck_demo</code>) then navigate to
-the <code>twist2_neck_ros2</code> package. Then swap the video feeds in <code>camera_config.yaml</code>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspaces/twist2_neck_demo<span class="w">  </span><span class="c1"># location might be different depending on your installation</span>
+                <h1 id="_1">トラブルシューティング</h1>
+<p>テレオペレーションセッションの実行中に発生しうる、いくつかのよくある問題があります。
+ここでは既知のものを一覧にしています。</p>
+<h2 id="_2">ヘッドセットが接続されているのにテレオペレーションセッションが開始しない</h2>
+<p>行った操作:</p>
+<ul>
+<li>ROS2 Launchfileを実行した</li>
+<li><a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a>にアクセスしてConnectを押した</li>
+</ul>
+<p>発生した現象:</p>
+<ul>
+<li>ブラウザのUIは消えるが、ヘッドトラッキングが動作せず、カメラ映像も表示されない</li>
+<li>コントローラーモデルが表示されない</li>
+<li>「show」ボタンが表示されない</li>
+</ul>
+<p>対処法:</p>
+<ul>
+<li>ヘッドセット側のブラウザクライアントを終了し、再接続を試してください。多くの場合、1回で解決します。</li>
+</ul>
+<h2 id="_3">映像に違和感がある</h2>
+<p>考えられる原因は3つあります:</p>
+<ul>
+<li>左右のカメラ映像が入れ替わっている</li>
+<li>映像がずれている</li>
+<li>片方の映像の準備ができていない</li>
+</ul>
+<h3 id="_4">カメラ映像の入れ替わり</h3>
+<p>ワークスペースフォルダ(<code>/workspaces/twist2_neck_demo</code>)に移動し、次に<code>twist2_neck_ros2</code>パッケージに移動します。
+<code>camera_config.yaml</code>内で映像を入れ替えます。
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspaces/twist2_neck_demo<span class="w">  </span><span class="c1"># インストール状況によって場所が異なる場合があります</span>
 <span class="nb">cd</span><span class="w"> </span>src/twist2_neck_ros2
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>code<span class="w"> </span>camera_config.yaml<span class="w">  </span><span class="c1"># or use your preferred code editor</span>
+<div class="highlight"><pre><span></span><code>code<span class="w"> </span>camera_config.yaml<span class="w">  </span><span class="c1"># または使い慣れたコードエディタを使用してください</span>
 </code></pre></div>
 <img alt="Camera configuration" src="../../assets/camera_config.png" /></p>
-<p>You may need to rerun
+<p>再度実行が必要な場合があります:
 <div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
 </code></pre></div>
-in the workspace root (<code>~/workspaces/twist2_neck_demo</code>) and
-you will need to restart the G1 Neck stack (<kb>Ctrl</kb>+<kb>c</kb>
-then run <code>ros2 launch</code> again) (see the <a href="../getting-started/deployment/#stoppingrestarting-the-stack">deployment page</a> for details).</p>
-<h3 id="misaligned-feeds">Misaligned feeds</h3>
-<p>See the <a href="../getting-started/deployment/#camera-alignment">camera alignment steps</a> on how to conduct camera alignment
-<strong>(Accuvision only)</strong></p>
-<h2 id="feed-only-on-one-side">Feed only on one side</h2>
-<p>One of the decoders might have not initialized properly (due to USB errors, or cameras being unpowered). Reseat USB connections and ensure that you are NOT using a USB hub for the camera feeds, then   </p>
-<h2 id="feed-works-but-head-is-not-moving">Feed works but head is not moving</h2>
-<p>There are a few possibilities:
-- The U2D2 power hub is not turned on
-- You are not part of the <code>dialout</code> group (this should not be the case if you are using the devkit). 
-- The device (port) of the U2D2 is wrong
-  - This can be configured through the <code>config.json</code> file inside <code>twist2_neck_ros2</code>.
-    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspaces/twist2_neck_demo<span class="w">  </span><span class="c1"># location might be different depending on your installation</span>
+ワークスペースのルート(<code>~/workspaces/twist2_neck_demo</code>)で実行し、G1 Neckスタックを再起動する必要があります
+(<kbd>Ctrl</kbd>+<kbd>c</kbd>を押してから<code>ros2 launch</code>を再実行してください)
+(詳細は<a href="../getting-started/deployment/#stoppingrestarting-the-stack">実行ページ</a>を参照してください)。</p>
+<h3 id="_5">映像のずれ</h3>
+<p>カメラの位置調整方法については、<a href="../getting-started/deployment/#camera-alignment">カメラの位置調整の手順</a>を参照してください
+<strong>(Accuvisionのみ)</strong></p>
+<h2 id="_6">片方の映像しか表示されない</h2>
+<p>デコーダーの一方が正常に初期化されていない可能性があります(USBエラーやカメラの電源が入っていないことが原因)。
+USB接続を挿し直し、カメラ映像にUSBハブを使用していないことを確認してください。</p>
+<h2 id="_7">映像は表示されるがヘッドが動かない</h2>
+<p>考えられる原因はいくつかあります:</p>
+<ul>
+<li>U2D2電源ハブの電源が入っていない</li>
+<li><code>dialout</code>グループに所属していない(開発キットを使用している場合はこの状態にはならないはずです)</li>
+<li>U2D2のデバイス(ポート)が間違っている<ul>
+<li>これは<code>twist2_neck_ros2</code>内の<code>config.json</code>ファイルから設定できます。
+  <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspaces/twist2_neck_demo<span class="w">  </span><span class="c1"># インストール状況によって場所が異なる場合があります</span>
 <span class="nb">cd</span><span class="w"> </span>src/twist2_neck_ros2
 </code></pre></div>
-    <div class="highlight"><pre><span></span><code>code<span class="w"> </span>config.json<span class="w">  </span><span class="c1"># or use your preferred code editor</span>
+  <div class="highlight"><pre><span></span><code>code<span class="w"> </span>config.json<span class="w">  </span><span class="c1"># または使い慣れたコードエディタを使用してください</span>
 </code></pre></div>
-    Change the <code>device_name</code> field.</p>
-<div class="highlight"><pre><span></span><code>![config.json](assets/port_config.png)
-If you are unsure what your port name is, try
-```bash
-ls /dev/tty*
-```
-There will be one that &#39;stands out&#39;, such as `/dev/ttyACM0`. That is probably the U2D2&#39;s device.
+  <code>device_name</code>フィールドを変更します。<br/>
+  <img alt="Config file" src="../../assets/port_config.png" /> <br/>
+  ポート名が分からない場合は、次を試してください:
+  <div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/dev/tty*
 </code></pre></div>
+  <code>/dev/ttyACM0</code>のように、他と異なるものが1つあるはずです。それがおそらくU2D2のデバイスです。</li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div><footer>

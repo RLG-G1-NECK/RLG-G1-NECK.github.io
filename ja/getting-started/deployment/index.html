@@ -14,7 +14,7 @@
       <script>
         // Current page data
         var mkdocs_page_name = "\u5b9f\u884c";
-        var mkdocs_page_input_path = "getting-started/deployment.en.md";
+        var mkdocs_page_input_path = "getting-started/deployment.ja.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -45,25 +45,26 @@
               <ul class="current">
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">実行</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#pc-bringup">PC Bringup</a>
+    <li class="toctree-l2"><a class="reference internal" href="#pc-bringup">PCの起動</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#headset-to-pc">Headset to PC</a>
+    <li class="toctree-l2"><a class="reference internal" href="#pc">ヘッドセットとPCの接続</a>
     </li>
     </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">ハードウェア</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../hardware/parts-and-bom/">部品</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../hardware/parts-and-bom/">部品表</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../hardware/assembly/">組み立て</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../hardware/wiring/">配線</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">問題解決</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/">問題解決</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/">よくある問題</a>
+                  </li>
               </ul>
   <div class="language-selector">
         <a href="../../../getting-started/deployment/">English</a>
@@ -93,81 +94,77 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="deploying-the-rlg-g1-neck">Deploying the RLG G1 Neck</h1>
-<p>This guide assumes you have received the development kit, or have followed
-the installation instructions to reach the point where the G1 Neck software
-stack is installed on your system, and have wired everything together using
-the wiring guide.</p>
-<p>There are two sides to this: The PC (jetson) side and the headset side. You will
-first need to bring up the PC stack, which will launch the CloudXR service.</p>
-<p>Then, you can connect the headset to the PC through the CloudXR service
-and get head tracking and a camera stream.</p>
-<p>Before you start, <strong>ensure your PC and headset are on the same network.</strong></p>
-<h2 id="pc-bringup">PC Bringup</h2>
+                <h1 id="rlg-g1-neck">RLG G1 Neckの実行方法</h1>
+<p>このガイドは、開発キットを受け取っているか、インストール手順に従ってG1 Neckソフトウェアスタックが
+システムにインストールされ、配線ガイドに従ってすべての配線が完了している状態を前提としています。</p>
+<p>これには2つの側面があります: PC(jetson)側とヘッドセット側です。まずPCスタックを起動し、
+CloudXRサービスを立ち上げる必要があります。</p>
+<p>その後、CloudXRサービスを通じてヘッドセットをPCに接続し、ヘッドトラッキングとカメラ映像を取得できます。</p>
+<p>開始する前に、<strong>PCとヘッドセットが同じネットワークに接続されていることを確認してください。</strong></p>
+<h2 id="pc-bringup">PCの起動</h2>
 <ol>
-<li>Power your PC on and log in to the account containing the G1 Neck stack installation.
-   In the case of the devkit, this is the <code>g1neck</code> account. Contact your provider for
-   the account password if you do not have it.</li>
-<li>(<strong>Accuvision only</strong>) We will need to apply a pitch correction of 13 degrees to the left camera. The exact value
-   may vary depending on how you assembled your unit. You can conduct <a href="#camera-alignment">camera alignment</a> during
-   operation. <strong>Until the decoder is able to save config data, this will need to be performed every time power is reconnected.</strong></li>
-<li>Connect a micro USB cable to left camera decoder's UART port.</li>
-<li>Open <code>gtkterm</code>. If it is not installed, install it via <code>sudo apt install gtkterm</code></li>
-<li>Select the port connected to the decoder. This is usually <code>/dev/ttyUSB0</code>. Set the baudrate to 115200.</li>
-<li>Select pitch angle by pressing <code>p</code></li>
-<li>Enter 13 degrees by entering <code>130</code> then <code>enter</code></li>
-<li>Open a new terminal by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd></li>
-<li>Change into the ROS2 workspace of the G1 Neck stack. By default, this is located under <code>~/workspaces/twist2_neck_demo</code>
+<li>PCの電源を入れ、G1 Neckスタックがインストールされているアカウントにログインします。
+   開発キットの場合、これは<code>g1neck</code>アカウントです。パスワードをお持ちでない場合は、提供元にお問い合わせください。</li>
+<li>(<strong>Accuvisionのみ</strong>) 左カメラに13度のピッチ補正を適用する必要があります。正確な値はユニットの組み立て方によって
+   異なる場合があります。動作中に<a href="#camera-alignment">カメラの位置調整</a>を行うことができます。
+   <strong>デコーダーが設定データを保存できるようになるまでは、電源を再接続するたびにこの操作を行う必要があります。</strong></li>
+<li>マイクロUSBケーブルを左カメラデコーダーのUARTポートに接続します。</li>
+<li><code>gtkterm</code>を開きます。インストールされていない場合は、<code>sudo apt install gtkterm</code>でインストールしてください。</li>
+<li>デコーダーに接続されているポートを選択します。通常は<code>/dev/ttyUSB0</code>です。ボーレートを115200に設定します。</li>
+<li><code>p</code>を押してピッチ角度を選択します。</li>
+<li><code>130</code>と入力してから<code>enter</code>を押して13度を入力します。</li>
+<li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>を押して新しいターミナルを開きます。</li>
+<li>G1 NeckスタックのROS2ワークスペースに移動します。デフォルトでは<code>~/workspaces/twist2_neck_demo</code>にあります。
    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/workspaces/twist2_neck_demo
 </code></pre></div></li>
-<li>Source the workspace.
+<li>ワークスペースをソースします。
    <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>install/setup.sh
 </code></pre></div></li>
-<li>Launch the G1 Neck stack using the ROS2 Launchfile.
+<li>ROS2 Launchfileを使ってG1 Neckスタックを起動します。
    <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>twist2_neck_ros2<span class="w"> </span>twist2_neck.launch.py
 </code></pre></div>
-   This will automatically start the CloudXR service and bringup the entire G1 Neck stack.</li>
+   これにより、CloudXRサービスが自動的に開始され、G1 Neckスタック全体が起動します。</li>
 </ol>
-<p>Congratulations! That's all there is to do on the PC side. Now for the headset part</p>
-<h2 id="headset-to-pc">Headset to PC</h2>
-<p>This section is practically identical to <a href="https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset">NVIDIA's official guide</a>.
-1. On the headset, open the browser and navigate to <a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a>
-2. If your host PC is a Jetson, set <code>H.265</code> as your video codec on the side panel.
+<p>おめでとうございます!PC側で行うことはこれですべてです。次はヘッドセット側です。</p>
+<h2 id="pc">ヘッドセットとPCの接続</h2>
+<p>このセクションは<a href="https://nvidia.github.io/IsaacTeleop/main/getting_started/quick_start.html#connect-an-xr-headset">NVIDIAの公式ガイド</a>
+とほぼ同じ内容です。
+1. ヘッドセット側でブラウザを開き、<a href="https://nvidia.github.io/IsaacTeleop/client/main/">https://nvidia.github.io/IsaacTeleop/client/main/</a>にアクセスします。
+2. ホストPCがJetsonの場合、サイドパネルで動画コーデックを<code>H.265</code>に設定してください。
    <img alt="Codec Selection" src="../../../assets/codec_selection.png" />
-3. Enter the ip address of your pc inside of the Server IP box.
+3. Server IPの欄にPCのIPアドレスを入力します。
    <img alt="IP Input" src="../../../assets/ip_input.png" />
-   If you don't know what your ip is, you can find it through the wifi settings on your desktop,
+   自分のIPアドレスが分からない場合は、デスクトップのWi-Fi設定から確認できます。
    <img alt="Wifi Selection" src="../../../assets/network_selection.png" />
    <img alt="Wifi Details" src="../../../assets/network_details.png" />
-   or if you prefer the terminal and have some experience with linux command line tools,
+   ターミナルを使い慣れている場合は、
    <div class="highlight"><pre><span></span><code>ip<span class="w"> </span>address
 </code></pre></div>
-   works as well.</p>
-<h1 id="stoppingrestarting-the-stack">Stopping/Restarting the stack</h1>
-<p>Pressing <kb>Ctrl</kb>+<kb>c</kb> in the terminal that is running the G1 Neck stack will stop the stack. To relaunch, run
+   でも確認できます。</p>
+<h1 id="stoppingrestarting-the-stack">スタックの停止・再起動</h1>
+<p>G1 Neckスタックを実行しているターミナルで<kbd>Ctrl</kbd>+<kbd>c</kbd>を押すとスタックが停止します。再起動するには、
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>twist2_neck_ros2<span class="w"> </span>twist2_neck.launch.py
-</code></pre></div></p>
-<h1 id="camera-alignment">Camera Alignment</h1>
-<p><strong>This only applies if you are using the Accuvision cameras</strong>.
-Put on the headset, start the teleoperation session, and see if the image looks "normal".</p>
-<p>If it feels disorienting, your left and right eye video streams are likely unaligned. 
-Try closing one eye and switch between them to see if this is the case. </p>
-<p>On the devkit, there is a pitch mismatch of 13 angles between the left and the right camera feeds.
-The reason for this is still unknown, but can be corrected through the camera decoder's
-UART interface. </p>
-<p>Follow the steps as described in <a href="#pc-bringup">PC Bringup step 2</a>, up 
-until step 4 Then, enter the pitch correction angle. The format is as follows:</p>
-<p><code>tens ones decimal</code>. </p>
-<p>For example, to set a pitch correction of <code>10.5</code>, you would enter
-<code>105</code>. The decoder does not save configuration data so take note of this angle as <strong>you
-will need to reapply the configuration every time power is reconnected.</strong></p>
-<p>If things are not working as expected, proceed to the <a href="../../troubleshooting/">Troubleshooting page</a>.</p>
+</code></pre></div>
+を実行してください。</p>
+<h1 id="camera-alignment">カメラの位置調整</h1>
+<p><strong>これはAccuvisionカメラを使用している場合にのみ該当します</strong>。
+ヘッドセットを装着し、テレオペレーションセッションを開始して、映像が「正常」に見えるか確認してください。</p>
+<p>違和感がある場合、左右の映像がずれている可能性があります。
+片目を閉じて切り替えることで、この状態かどうかを確認できます。</p>
+<p>開発キットでは、左右のカメラ映像の間に13度のピッチのずれがあります。
+この原因はまだ不明ですが、カメラデコーダーのUARTインターフェースを通じて補正できます。</p>
+<p><a href="#pc-bringup">PCの起動の手順2</a>の手順4までを実行してください。その後、ピッチ補正角度を入力します。
+形式は次の通りです:</p>
+<p><code>十の位 一の位 小数点</code></p>
+<p>例えば、ピッチ補正を<code>10.5</code>に設定する場合は、<code>105</code>と入力します。デコーダーは設定データを保存しないため、
+この角度を記録しておいてください。<strong>電源を再接続するたびに設定を再適用する必要があります。</strong></p>
+<p>想定通りに動作しない場合は、<a href="../../troubleshooting/">トラブルシューティングページ</a>に進んでください。</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="フッターナビゲーション">
         <a href="../../" class="btn btn-neutral float-left" title="ホーム"><span class="icon icon-circle-arrow-left"></span> 前へ</a>
-        <a href="../../hardware/parts-and-bom/" class="btn btn-neutral float-right" title="部品">次へ <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../hardware/parts-and-bom/" class="btn btn-neutral float-right" title="部品表">次へ <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

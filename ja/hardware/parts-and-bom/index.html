@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>部品 - G1 Neck Docs</title>
+    <title>部品表 - G1 Neck Docs</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u90e8\u54c1";
-        var mkdocs_page_input_path = "hardware/parts-and-bom.en.md";
+        var mkdocs_page_name = "\u90e8\u54c1\u8868";
+        var mkdocs_page_input_path = "hardware/parts-and-bom.ja.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -48,7 +48,7 @@
               </ul>
               <p class="caption"><span class="caption-text">ハードウェア</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">部品</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">部品表</a>
     <ul class="current">
     </ul>
                   </li>
@@ -57,9 +57,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../wiring/">配線</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">問題解決</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/">問題解決</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/">よくある問題</a>
+                  </li>
               </ul>
   <div class="language-selector">
         <a href="../../../hardware/parts-and-bom/">English</a>
@@ -80,7 +81,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../" class="icon icon-home" aria-label="ドキュメント"></a></li>
           <li class="breadcrumb-item">ハードウェア</li>
-      <li class="breadcrumb-item active">部品</li>
+      <li class="breadcrumb-item active">部品表</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -89,38 +90,40 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="hardware">Hardware</h1>
-<p>The RLG G1 Neck is mostly 3d-printed and relies on off-the-shelf mechanical components
-for smooth and rigid motion. </p>
-<p>Since it was designed in Japan, it mostly uses parts available
-in Japan, however sourcing the neccessary parts from alternatives like Aliexpress is not difficult
-as it has no preference for specific brands or manufacturers.</p>
-<p>Two camera types are currently supported; however it is possible to adapt other camera
-types to work as well by creating custom camera mounts.</p>
-<h1 id="bom">BOM</h1>
-<p>The BOM can be found <a href="https://docs.google.com/spreadsheets/d/1gwZNJmtOV1_wQ62z1Mm8VV6fZPQNiGaJnrXC8sGx9LE/edit?usp=sharing">here</a>.</p>
+                <h1 id="_1">ハードウェア</h1>
+<p>RLG G1 Neckはそのほとんどが3Dプリントで製作されており、滑らかで剛性のある動作のために
+市販の機械部品を使用しています。</p>
+<p>日本で設計されたため、主に日本国内で入手可能な部品を使用していますが、特定のブランドや
+メーカーへのこだわりはないため、Aliexpressなどの代替手段から必要な部品を調達することも
+難しくありません。</p>
+<p>現在2種類のカメラタイプに対応していますが、カスタムカメラマウントを作成することで、
+他のカメラタイプにも対応させることが可能です。</p>
+<h1 id="_2">部品表</h1>
+<p>部品表は<a href="https://docs.google.com/spreadsheets/d/1gwZNJmtOV1_wQ62z1Mm8VV6fZPQNiGaJnrXC8sGx9LE/edit?usp=sharing">こちら</a>から確認できます。</p>
 <h1 id="cad">CAD</h1>
-<p>Like the TWIST2 Neck, the RLG G1 Neck was designed in Onshape, and is hosted online. 
-It can be found <a href="https://cad.onshape.com/documents/614503cf4078ded46dc4d9df/w/728dad7b352bc600fab4452a/e/807a6ef6045ecfcff44e7754?configuration=List_1bw2HqPt7vlDom%3DHighPS&amp;renderMode=0&amp;uiState=6a9431b7f925e2bb1e9022f5">here</a>.</p>
-<p>Design decisions are written in the document notes.
+<p>TWIST2 Neckと同様に、RLG G1 NeckはOnshapeで設計されており、オンライン上でホストされています。
+<a href="https://cad.onshape.com/documents/614503cf4078ded46dc4d9df/w/728dad7b352bc600fab4452a/e/807a6ef6045ecfcff44e7754?configuration=List_1bw2HqPt7vlDom%3DHighPS&amp;renderMode=0&amp;uiState=6a9431b7f925e2bb1e9022f5">こちら</a>から確認できます。</p>
+<p>設計上の判断はドキュメントのノートに記載されています。
 <img alt="Onshape Document Notes" src="../../../assets/cad_document_notes.png" /></p>
-<h2 id="3d-printing">3D Printing</h2>
-<p>To 3D print the parts, you can either navigate to Onshape and export the parts individually, or download
-the <a href="https://cad.onshape.com/documents/614503cf4078ded46dc4d9df/w/50a22c666b68854006baa02a/e/ab9fb4c4df483da82351e70b">premade Bambulab project</a>
-also hosted on Onshape. The first method guarantees that the parts will
-be the most up to date, while the second is more convenient. </p>
-<p>Printing with dedicated support material interfaces will make the surfaces turn out very nice.
-Do this if possible.</p>
-<h2 id="configurations">Configurations</h2>
-<p>There are two configurations for two camera supported types: 
-- Accuvision HighPS Mini camera
-- Tier IV C1 camera</p>
-<p>Switching between configurations is simple; nagivate to the main assembly (<code>main_asm</code>)
-or the skull assembly (<code>skull_asm</code>) and select the configuration you want from the configuration panel.
+<h2 id="3d">3Dプリント</h2>
+<p>パーツを3Dプリントするには、Onshapeにアクセスして個別にパーツをエクスポートするか、Onshape上でホストされている
+<a href="https://cad.onshape.com/documents/614503cf4078ded46dc4d9df/w/50a22c666b68854006baa02a/e/ab9fb4c4df483da82351e70b">Bambulab用の完成済みプロジェクト</a>
+をダウンロードしてください。前者の方法はパーツが常に最新の状態であることを保証し、後者はより手軽です。</p>
+<p>専用のサポート材インターフェースを使用してプリントすると、表面の仕上がりが非常に綺麗になります。
+可能であればこの方法を使用してください。</p>
+<h2 id="_3">構成</h2>
+<p>対応している2種類のカメラタイプに応じて、2つの構成があります:</p>
+<ul>
+<li>Accuvision HighPS Miniカメラ</li>
+<li>Tier IV C1カメラ</li>
+</ul>
+<p>構成の切り替えは簡単です。メインアセンブリ(<code>main_asm</code>)またはスカルアセンブリ(<code>skull_asm</code>)に移動し、
+構成パネルから使用したい構成を選択してください。
 <img alt="CAD Configuration" src="../../../assets/cad_config.png" /></p>
-<h2 id="adjusting-tolerances-to-suit-your-printer-and-filament">Adjusting tolerances to suit your printer and filament</h2>
-<p>The design makes use of variables and you may adjust parameters to get perfect prints for your specific setup.</p>
-<p>You will need to first copy the document, then change the variables in the <a href="https://cad.onshape.com/documents/614503cf4078ded46dc4d9df/w/728dad7b352bc600fab4452a/e/79a67bc2376c51c3e07317a2?renderMode=0&amp;leftPanel=false&amp;uiState=6a9432c0f925e2bb1e902575">hardware variable table</a>.</p>
+<h2 id="_4">プリンターとフィラメントに合わせた公差の調整</h2>
+<p>この設計では変数が使用されており、特定のセットアップに合わせて完璧なプリント結果を得るために
+パラメータを調整することができます。</p>
+<p>まずドキュメントをコピーし、<a href="https://cad.onshape.com/documents/614503cf4078ded46dc4d9df/w/728dad7b352bc600fab4452a/e/79a67bc2376c51c3e07317a2?renderMode=0&amp;leftPanel=false&amp;uiState=6a9432c0f925e2bb1e902575">ハードウェア変数テーブル</a>内の変数を変更してください。</p>
               
             </div>
           </div><footer>

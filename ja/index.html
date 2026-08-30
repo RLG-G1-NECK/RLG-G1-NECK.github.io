@@ -40,10 +40,6 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">ホーム</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -54,16 +50,17 @@
               </ul>
               <p class="caption"><span class="caption-text">ハードウェア</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="hardware/parts-and-bom/">部品</a>
+                  <li class="toctree-l1"><a class="reference internal" href="hardware/parts-and-bom/">部品表</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="hardware/assembly/">組み立て</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="hardware/wiring/">配線</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">問題解決</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="troubleshooting/">問題解決</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="troubleshooting/">よくある問題</a>
+                  </li>
               </ul>
   <div class="language-selector">
         <a href="../">English</a>
@@ -94,20 +91,15 @@
               
                 <h1 id="rlg-g1-neck">RLG G1 Neck</h1>
 <p><img alt="RLG G1 Neck" src="../assets/g1neck.jpg" /></p>
-<p>日本語のページです</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<p>これは<a href="http://www.rlg.sys.es.osaka-u.ac.jp/">RLG</a>の<strong>G1 Neckプロジェクト</strong>のドキュメントです。
+RLG G1 Neckは<a href="https://www.osaka-u.ac.jp/ja">大阪大学</a>の<a href="https://soro.sys.es.osaka-u.ac.jp/index.html">吉川研究室</a>によって開発され、
+<a href="https://yanjieze.com/projects/TWIST2/">TWIST2 Neck</a>の後継機を目指しています。特に機構剛性、ケーブル取り回し、
+拡張性の面でTWIST2 Neckからの改善を図っています。TWIST2 Neckと同様に、RLG G1 Neckはデフォルト構成では
+<a href="https://www.unitree.com/g1">Unitree G1ヒューマノイド</a>に取り付けられるよう設計されています。</p>
+<p>開発キットを受け取った方は、<a href="getting-started/deployment/">実行ページ</a>に進んでください。
+そうでない場合は、インストールガイドに従ってください。</p>
+<p>機構的な詳細(3Dプリント手順、配線図、組み立てガイド)はハードウェアセクションに、
+ソフトウェアの詳細はソフトウェアページに記載されています。</p>
               
             </div>
           </div><footer>
