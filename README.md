@@ -1,7 +1,7 @@
 # RLG G1 Neck Documentation
 
 This is the documentation for the RLG G1 Neck. It is made with [MkDocs](https://www.mkdocs.org/).
-It is avaiable in English (英語) and Japanese (日本語)
+It is avaiable in English (英語) and Japanese (日本語), and you can view it [here](https://rlg-g1-neck.github.io/)
 
 ## Building
 You can view the documentation locally by cloning the repository and viewing it via
