@@ -77,9 +77,7 @@ The reason for this is still unknown, but can be corrected through the camera de
 UART interface. 
 
 Follow the steps as described in [PC Bringup step 2](#pc-bringup), up 
-until step 4 Then, enter the pitch correction angle. The format is as follows:
-
-`tens ones decimal`. 
+until step 4 Then, enter the pitch correction angle. The format is as follows: `tens ones decimal`. 
 
 For example, to set a pitch correction of `10.5`, you would enter
 `105`. The decoder does not save configuration data so take note of this angle as **you
