@@ -35,3 +35,9 @@
   {{ super() }}
   <link rel="icon" type="image/x-icon" href="{{ 'assets/favicon/favicon.ico' | url }}">
 {% endblock %}
+
+<!--Google Search-->
+{% block extrahead %}
+  {{ super() }}
+  <meta name="google-site-verification" content="UR96oWwcq_FRqXclrTIKRbeb9vKB7EIljkiQRfXTbTs" />
+{% endblock %}
