@@ -13,3 +13,12 @@
   </div>
   {%- endif %}
 {% endblock %}
+
+{% block site_name %}
+<a class="navbar-brand" href="{{ nav.homepage.url|url }}">
+  <span class="site-name">{{ config.site_name }}</span>
+  {% if config.theme.logo %}
+    <img src="{{ config.theme.logo|url }}" alt="{{ config.site_name }}" class="site-logo">
+  {% endif %}
+</a>
+{% endblock %}

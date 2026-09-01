@@ -14,10 +14,12 @@ nav:
 
 theme:
   name: readthedocs
+  logo: assets/gear.svg
   custom_dir: theme_overrides
 
 extra_css:
   - language-selector.css
+  - logo.css 
 
 extra_javascript:
   - copy-button.js  # copy button for code blocks
