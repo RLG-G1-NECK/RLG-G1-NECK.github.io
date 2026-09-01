@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+<!--Language selector-->
 {%- block site_nav %}
   {{ super() }}
 
@@ -7,13 +8,19 @@
   <div class="language-selector">
     {%- for lang, file in page.file.alternates.items() | sort %}
       {%- if lang != i18n_page_locale %}
-        <a href="{{ file.url | url }}">{% if lang == "en" %}English{% elif lang == "ja" %}日本語{% else %}{{ lang }}{% endif %}</a>
+        <a href="{{ file.url | url }}">
+            {% if lang == "en" %}English
+            {% elif lang == "ja" %}日本語
+            {% else %}{{ lang }}
+            {% endif %}
+        </a>
       {%- endif %}
     {%- endfor %}
   </div>
   {%- endif %}
 {% endblock %}
 
+<!--Site logo-->
 {% block site_name %}
 <a class="navbar-brand" href="{{ nav.homepage.url|url }}">
   <span class="site-name">{{ config.site_name }}</span>
@@ -21,4 +28,10 @@
     <img src="{{ config.theme.logo|url }}" alt="{{ config.site_name }}" class="site-logo">
   {% endif %}
 </a>
+{% endblock %}
+
+<!--Favicon-->
+{% block extrahead %}
+  {{ super() }}
+  <link rel="icon" type="image/x-icon" href="{{ 'assets/favicon/favicon.ico' | url }}">
 {% endblock %}

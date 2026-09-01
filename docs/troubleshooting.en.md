@@ -74,3 +74,35 @@ There are a few possibilities:
       ls /dev/tty*
       ```
       There will be one that 'stands out', such as `/dev/ttyACM0`. That is probably the U2D2's device.
+- The `isaac_teleop_node` is not working
+    - The `isaac_teleop_node` is responsible for translating head tracking data into ROS2 transforms,
+      which are read by the `neck_node` which commands the servos. If the `isaac_teleop_node` is dead,
+      head tracking will not work.
+    - Check the output directly after calling `ros2 launch` and see if any nodes have died.
+      <br>
+      If you see a python error mentioning missing packages, you may have a Conda enviroment
+      is activated. See how to deactivate an environment [here](#deactivating-a-condapython-environment)
+
+
+
+## Deactivating a Conda/python environment
+Conda/python environments can cause issues when activated during build and deployment.
+
+To deactivate such enviroments, run
+```bash
+conda deactivate
+```
+and check `CONDA_DEFAULT_ENV` to see if any environments are still activated. 
+```bash
+echo $CONDA_DEFAULT_ENV
+```
+should return nothing. If it does, keep calling `conda deactivate` until it is empty.
+<br>
+For python environments, run
+```bash
+deactivate
+```
+until you get
+```
+> deactivate: command not found
+```

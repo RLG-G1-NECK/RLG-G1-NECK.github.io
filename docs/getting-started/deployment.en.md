@@ -11,20 +11,45 @@ first need to bring up the PC stack, which will launch the CloudXR service.
 Then, you can connect the headset to the PC through the CloudXR service
 and get head tracking and a camera stream.
 
-Before you start, **ensure your PC and headset are on the same network.**
+Before you start, here is a list of things you need:
+
+- The RLG G1 Devkit (Jetson/PC + RLG G1 Neck)
+- A VR headset supported by IsaacTeleop (see [here](https://nvidia.github.io/IsaacTeleop/main/overview/ecosystem.html#supported-devices-9))
+- A network capable of low latency and high bandwith traffic for video streaming
+- Keyboard, mouse, screen as needed
+
+Finally, **ensure that your PC and headset are on the same network.**
 
 ## PC Bringup
+!!! warning
+    **On a baremetal installation, system python is required for IsaacTeleop to function properly!**
+    Deactivate any conda or python environments before starting the stack with
+    ```bash
+    conda deactivate
+    ```
+    for Conda and
+    ```bash
+    deactivate
+    ```
+    for python.
+
+    For more details, see [here](../troubleshooting.md#deactivating-a-condapython-environment).
+
 1. Power your PC on and log in to the account containing the G1 Neck stack installation.
    In the case of the devkit, this is the `g1neck` account. Contact your provider for
    the account password if you do not have it.
-2. (**Accuvision only**) We will need to apply a pitch correction of 13 degrees to the left camera. The exact value
-   may vary depending on how you assembled your unit. You can conduct [camera alignment](#camera-alignment) during
-   operation. **Until the decoder is able to save config data, this will need to be performed every time power is reconnected.**
-   1. Connect a micro USB cable to left camera decoder's UART port.
-   2. Open `gtkterm`. If it is not installed, install it via `sudo apt install gtkterm`
-   3. Select the port connected to the decoder. This is usually `/dev/ttyUSB0`. Set the baudrate to `115200`.
-   4. Select pitch angle by pressing `p`
-   5. Enter 13 degrees by entering `130` then `enter`
+!!! note
+    **Accuvision only**: We will need to apply a pitch correction of 13 degrees to the left camera.
+    The exact value
+    may vary depending on how you assembled your unit. You can conduct [camera alignment](#camera-alignment) during
+    operation. **Until the decoder is able to save config data, this will need to be performed every time power is reconnected.**
+
+    1. Connect a micro USB cable to left camera decoder's UART port.
+    ![Decoder Location](../assets/g1neck_front_leftarrow.jpg)
+    2. Open `gtkterm`. If it is not installed, install it via `sudo apt install gtkterm`
+    3. Select the port connected to the decoder. This is usually `/dev/ttyUSB0`. Set the baudrate to `115200`.
+    4. Select pitch angle by pressing `p`
+    5. Enter 13 degrees by entering `130` then `enter`
 3. Open a new terminal by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>
 4. Change into the ROS2 workspace of the G1 Neck stack. By default, this is located under `~/workspaces/twist2_neck_demo`
    ```bash
