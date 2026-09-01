@@ -23,7 +23,10 @@
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script>hljs.highlightAll();</script>
+   
+  <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -81,11 +84,16 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#_7">映像は表示されるがヘッドが動かない</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deactivating-a-condapython-environment">Conda/Python環境の無効化</a>
+    </li>
     </ul>
                   </li>
               </ul>
   <div class="language-selector">
-        <a href="../../troubleshooting/">English</a>
+        <a href="../../troubleshooting/">
+            English
+            
+        </a>
   </div>
 
       </div>
@@ -129,7 +137,7 @@
 </ul>
 <p>対処法:</p>
 <ul>
-<li>ヘッドセット側のブラウザクライアントを終了し、再接続を試してください。多くの場合、1回で解決します。</li>
+<li>ヘッドセット側のブラウザクライアントを終了し、再接続を試してください。多くの場合、1回で解決します</li>
 </ul>
 <h2 id="_3">映像に違和感がある</h2>
 <p>考えられる原因は3つあります:</p>
@@ -157,13 +165,13 @@
 <p>カメラの位置調整方法については、<a href="../getting-started/deployment/#camera-alignment">カメラの位置調整の手順</a>を参照してください
 <strong>(Accuvisionのみ)</strong></p>
 <h2 id="_6">片方の映像しか表示されない</h2>
-<p>デコーダーの一方が正常に初期化されていない可能性があります(USBエラーやカメラの電源が入っていないことが原因)。
-USB接続を挿し直し、カメラ映像にUSBハブを使用していないことを確認してください。</p>
+<p>デコーダーの一方が正常に初期化されていない可能性があります（USBエラーやカメラの電源が入っていないことが原因）。
+USB接続を挿し直し、カメラ映像にUSBハブを使用していないことを確認してください。   </p>
 <h2 id="_7">映像は表示されるがヘッドが動かない</h2>
 <p>考えられる原因はいくつかあります:</p>
 <ul>
 <li>U2D2電源ハブの電源が入っていない</li>
-<li><code>dialout</code>グループに所属していない(開発キットを使用している場合はこの状態にはならないはずです)</li>
+<li><code>dialout</code>グループに所属していない（開発キットを使用している場合はこの状態にはならないはずです）</li>
 <li>U2D2のデバイス(ポート)が間違っている<ul>
 <li>これは<code>twist2_neck_ros2</code>内の<code>config.json</code>ファイルから設定できます。
   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/workspaces/twist2_neck_demo<span class="w">  </span><span class="c1"># インストール状況によって場所が異なる場合があります</span>
@@ -179,7 +187,33 @@ USB接続を挿し直し、カメラ映像にUSBハブを使用していない�
   <code>/dev/ttyACM0</code>のように、他と異なるものが1つあるはずです。それがおそらくU2D2のデバイスです。</li>
 </ul>
 </li>
+<li><code>isaac_teleop_node</code>が動作していない<ul>
+<li><code>isaac_teleop_node</code>はヘッドトラッキングデータをROS2トランスフォームに変換する責任があり、
+  これを<code>neck_node</code>が読み取ってサーボコマンドを実行します。<code>isaac_teleop_node</code>が停止している場合、
+  ヘッドトラッキングは動作しません。</li>
+<li><code>ros2 launch</code>を実行した直後の出力を確認して、停止しているノードがないかを確認してください。
+  <br>
+  Pythonエラーが表示され、パッケージが見つからないと言っている場合は、Conda環境が
+  アクティブになっている可能性があります。環境を無効化する方法については<a href="#deactivating-a-condapython-environment">こちら</a>を参照してください</li>
 </ul>
+</li>
+</ul>
+<h2 id="deactivating-a-condapython-environment">Conda/Python環境の無効化</h2>
+<p>Conda/Python環境がビルドとデプロイ中にアクティブになっていると、問題が発生する可能性があります。</p>
+<p>このような環境を無効化するには、次を実行してください：
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+</code></pre></div>
+その後、<code>CONDA_DEFAULT_ENV</code>をチェックして、アクティブなままの環境がないか確認します。
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="nv">$CONDA_DEFAULT_ENV</span>
+</code></pre></div>
+何も出力されないはずです。出力された場合は、空になるまで<code>conda deactivate</code>を呼び出し続けてください。
+<br>
+Python環境の場合は、次を実行してください：
+<div class="highlight"><pre><span></span><code>deactivate
+</code></pre></div>
+以下が出力されるまで繰り返します：
+<div class="highlight"><pre><span></span><code>&gt; deactivate: command not found
+</code></pre></div></p>
               
             </div>
           </div><footer>

@@ -23,7 +23,10 @@
       <script src="../../../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script>hljs.highlightAll();</script>
+   
+  <link rel="icon" type="image/x-icon" href="../../../assets/favicon/favicon.ico">
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -75,7 +78,10 @@
                   </li>
               </ul>
   <div class="language-selector">
-        <a href="../../../getting-started/deployment/">English</a>
+        <a href="../../../getting-started/deployment/">
+            English
+            
+        </a>
   </div>
 
       </div>
@@ -108,19 +114,46 @@
 <p>これには2つの側面があります: PC(jetson)側とヘッドセット側です。まずPCスタックを起動し、
 CloudXRサービスを立ち上げる必要があります。</p>
 <p>その後、CloudXRサービスを通じてヘッドセットをPCに接続し、ヘッドトラッキングとカメラ映像を取得できます。</p>
-<p>開始する前に、<strong>PCとヘッドセットが同じネットワークに接続されていることを確認してください。</strong></p>
+<p>開始する前に、必要なものの一覧を以下に示します：</p>
+<ul>
+<li>RLG G1 Devkit（Jetson/PC + RLG G1 Neck）</li>
+<li>IsaacTeleopが対応しているVRヘッドセット（<a href="https://nvidia.github.io/IsaacTeleop/main/overview/ecosystem.html#supported-devices-9">こちら</a>を参照）</li>
+<li>ビデオストリーミング用に低レイテンシーと高帯域幅が確保できるネットワーク</li>
+<li>キーボード、マウス、画面（必要に応じて）</li>
+</ul>
+<p>最後に、<strong>PCとヘッドセットが同じネットワークに接続されていることを確認してください。</strong></p>
 <h2 id="pc-bringup">PCの起動</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>ベアメタルインストールでは、IsaacTeleopが正常に機能するためにはシステムPythonが必要です！</strong>
+スタックを開始する前に、以下のコマンドでcondaまたはPython環境を無効化してください：
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+</code></pre></div>
+Condaの場合、
+<div class="highlight"><pre><span></span><code>deactivate
+</code></pre></div>
+Pythonの場合。</p>
+<p>詳細は<a href="../../troubleshooting/#deactivating-a-condapython-environment">こちら</a>を参照してください。</p>
+</div>
 <ol>
 <li>PCの電源を入れ、G1 Neckスタックがインストールされているアカウントにログインします。
    開発キットの場合、これは<code>g1neck</code>アカウントです。パスワードをお持ちでない場合は、提供元にお問い合わせください。</li>
-<li>(<strong>Accuvisionのみ</strong>) 左カメラに13度のピッチ補正を適用する必要があります。正確な値はユニットの組み立て方によって
-   異なる場合があります。動作中に<a href="#camera-alignment">カメラの位置調整</a>を行うことができます。
-   <strong>デコーダーが設定データを保存できるようになるまでは、電源を再接続するたびにこの操作を行う必要があります。</strong></li>
-<li>マイクロUSBケーブルを左カメラデコーダーのUARTポートに接続します。</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Accuvisionのみ</strong>：左カメラに13度のピッチ補正を適用する必要があります。正確な値はユニットの組み立て方によって
+異なる場合があります。動作中に<a href="#camera-alignment">カメラの位置調整</a>を実施できます。
+<strong>デコーダーが設定データを保存できるようになるまでは、電源を再接続するたびにこの操作を行う必要があります。</strong></p>
+<ol>
+<li>マイクロUSBケーブルを左カメラデコーダーのUARTポートに接続します。
+<img alt="Decoder Location" src="../../../assets/g1neck_front_leftarrow.jpg" /></li>
 <li><code>gtkterm</code>を開きます。インストールされていない場合は、<code>sudo apt install gtkterm</code>でインストールしてください。</li>
 <li>デコーダーに接続されているポートを選択します。通常は<code>/dev/ttyUSB0</code>です。ボーレートを<code>115200</code>に設定します。</li>
 <li><code>p</code>を押してピッチ角度を選択します。</li>
 <li><code>130</code>と入力してから<code>enter</code>を押して13度を入力します。</li>
+</ol>
+</div>
+<ol>
 <li><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd>を押して新しいターミナルを開きます。</li>
 <li>G1 NeckスタックのROS2ワークスペースに移動します。デフォルトでは<code>~/workspaces/twist2_neck_demo</code>にあります。
    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/workspaces/twist2_neck_demo
@@ -146,7 +179,7 @@ CloudXRサービスを立ち上げる必要があります。</p>
    自分のIPアドレスが分からない場合は、デスクトップのWi-Fi設定から確認できます。
    <img alt="Wifi Selection" src="../../../assets/network_selection.png" />
    <img alt="Wifi Details" src="../../../assets/network_details.png" />
-   ターミナルを使い慣れている場合は、
+   ターミナルを使い慣れている場合、またはLinuxコマンドラインツールの経験があれば、
    <div class="highlight"><pre><span></span><code>ip<span class="w"> </span>address
 </code></pre></div>
    でも確認できます。</li>
@@ -163,9 +196,7 @@ CloudXRサービスを立ち上げる必要があります。</p>
 片目を閉じて切り替えることで、この状態かどうかを確認できます。</p>
 <p>開発キットでは、左右のカメラ映像の間に13度のピッチのずれがあります。
 この原因はまだ不明ですが、カメラデコーダーのUARTインターフェースを通じて補正できます。</p>
-<p><a href="#pc-bringup">PCの起動の手順2</a>の手順4までを実行してください。その後、ピッチ補正角度を入力します。
-形式は次の通りです:</p>
-<p><code>十の位 一の位 小数点</code></p>
+<p><a href="#pc-bringup">PCの起動の手順2</a>の手順4までを実行してください。その後、ピッチ補正角度を入力します。形式は次の通りです：<code>十の位 一の位 小数点</code>。</p>
 <p>例えば、ピッチ補正を<code>10.5</code>に設定する場合は、<code>105</code>と入力します。デコーダーは設定データを保存しないため、
 この角度を記録しておいてください。<strong>電源を再接続するたびに設定を再適用する必要があります。</strong></p>
 <p>想定通りに動作しない場合は、<a href="../../troubleshooting/">トラブルシューティングページ</a>に進んでください。</p>

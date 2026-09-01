@@ -23,7 +23,10 @@
       <script src="../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script>hljs.highlightAll();</script>
+   
+  <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -81,11 +84,16 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#feed-works-but-head-is-not-moving">Feed works but head is not moving</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deactivating-a-condapython-environment">Deactivating a Conda/python environment</a>
+    </li>
     </ul>
                   </li>
               </ul>
   <div class="language-selector">
-        <a href="../ja/troubleshooting/">日本語</a>
+        <a href="../ja/troubleshooting/">
+            日本語
+            
+        </a>
   </div>
 
       </div>
@@ -178,7 +186,33 @@ then run <code>ros2 launch</code> again) (see the <a href="../getting-started/de
   There will be one that 'stands out', such as <code>/dev/ttyACM0</code>. That is probably the U2D2's device.</li>
 </ul>
 </li>
+<li>The <code>isaac_teleop_node</code> is not working<ul>
+<li>The <code>isaac_teleop_node</code> is responsible for translating head tracking data into ROS2 transforms,
+  which are read by the <code>neck_node</code> which commands the servos. If the <code>isaac_teleop_node</code> is dead,
+  head tracking will not work.</li>
+<li>Check the output directly after calling <code>ros2 launch</code> and see if any nodes have died.
+  <br>
+  If you see a python error mentioning missing packages, you may have a Conda enviroment
+  is activated. See how to deactivate an environment <a href="#deactivating-a-condapython-environment">here</a></li>
 </ul>
+</li>
+</ul>
+<h2 id="deactivating-a-condapython-environment">Deactivating a Conda/python environment</h2>
+<p>Conda/python environments can cause issues when activated during build and deployment.</p>
+<p>To deactivate such enviroments, run
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+</code></pre></div>
+and check <code>CONDA_DEFAULT_ENV</code> to see if any environments are still activated. 
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="nv">$CONDA_DEFAULT_ENV</span>
+</code></pre></div>
+should return nothing. If it does, keep calling <code>conda deactivate</code> until it is empty.
+<br>
+For python environments, run
+<div class="highlight"><pre><span></span><code>deactivate
+</code></pre></div>
+until you get
+<div class="highlight"><pre><span></span><code>&gt; deactivate: command not found
+</code></pre></div></p>
               
             </div>
           </div><footer>

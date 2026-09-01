@@ -23,7 +23,10 @@
       <script src="../../js/html5shiv.min.js"></script>
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+      <script>hljs.highlightAll();</script>
+   
+  <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
+
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -75,7 +78,10 @@
                   </li>
               </ul>
   <div class="language-selector">
-        <a href="../../ja/getting-started/deployment/">日本語</a>
+        <a href="../../ja/getting-started/deployment/">
+            日本語
+            
+        </a>
   </div>
 
       </div>
@@ -111,20 +117,48 @@ the <a href="../../hardware/wiring/">wiring guide</a>.</p>
 first need to bring up the PC stack, which will launch the CloudXR service.</p>
 <p>Then, you can connect the headset to the PC through the CloudXR service
 and get head tracking and a camera stream.</p>
-<p>Before you start, <strong>ensure your PC and headset are on the same network.</strong></p>
+<p>Before you start, here is a list of things you need:</p>
+<ul>
+<li>The RLG G1 Devkit (Jetson/PC + RLG G1 Neck)</li>
+<li>A VR headset supported by IsaacTeleop (see <a href="https://nvidia.github.io/IsaacTeleop/main/overview/ecosystem.html#supported-devices-9">here</a>)</li>
+<li>A network capable of low latency and high bandwith traffic for video streaming</li>
+<li>Keyboard, mouse, screen as needed</li>
+</ul>
+<p>Finally, <strong>ensure that your PC and headset are on the same network.</strong></p>
 <h2 id="pc-bringup">PC Bringup</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>On a baremetal installation, system python is required for IsaacTeleop to function properly!</strong>
+Deactivate any conda or python environments before starting the stack with
+<div class="highlight"><pre><span></span><code>conda<span class="w"> </span>deactivate
+</code></pre></div>
+for Conda and
+<div class="highlight"><pre><span></span><code>deactivate
+</code></pre></div>
+for python.</p>
+<p>For more details, see <a href="../../troubleshooting/#deactivating-a-condapython-environment">here</a>.</p>
+</div>
 <ol>
 <li>Power your PC on and log in to the account containing the G1 Neck stack installation.
    In the case of the devkit, this is the <code>g1neck</code> account. Contact your provider for
    the account password if you do not have it.</li>
-<li>(<strong>Accuvision only</strong>) We will need to apply a pitch correction of 13 degrees to the left camera. The exact value
-   may vary depending on how you assembled your unit. You can conduct <a href="#camera-alignment">camera alignment</a> during
-   operation. <strong>Until the decoder is able to save config data, this will need to be performed every time power is reconnected.</strong></li>
-<li>Connect a micro USB cable to left camera decoder's UART port.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Accuvision only</strong>: We will need to apply a pitch correction of 13 degrees to the left camera.
+The exact value
+may vary depending on how you assembled your unit. You can conduct <a href="#camera-alignment">camera alignment</a> during
+operation. <strong>Until the decoder is able to save config data, this will need to be performed every time power is reconnected.</strong></p>
+<ol>
+<li>Connect a micro USB cable to left camera decoder's UART port.
+<img alt="Decoder Location" src="../../assets/g1neck_front_leftarrow.jpg" /></li>
 <li>Open <code>gtkterm</code>. If it is not installed, install it via <code>sudo apt install gtkterm</code></li>
 <li>Select the port connected to the decoder. This is usually <code>/dev/ttyUSB0</code>. Set the baudrate to <code>115200</code>.</li>
 <li>Select pitch angle by pressing <code>p</code></li>
 <li>Enter 13 degrees by entering <code>130</code> then <code>enter</code></li>
+</ol>
+</div>
+<ol>
 <li>Open a new terminal by pressing <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>t</kbd></li>
 <li>Change into the ROS2 workspace of the G1 Neck stack. By default, this is located under <code>~/workspaces/twist2_neck_demo</code>
    <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/workspaces/twist2_neck_demo
