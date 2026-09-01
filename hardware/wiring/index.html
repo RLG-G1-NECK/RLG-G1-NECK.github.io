@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../language-selector.css" rel="stylesheet" />
+        <link href="../../logo.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -31,8 +32,13 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="../.." class="icon icon-home"> G1 Neck Docs
-        </a>
+<a class="navbar-brand" href="../..">
+  <span class="site-name">G1 Neck Docs</span>
+  
+    <img src="../../assets/gear.svg" alt="G1 Neck Docs" class="site-logo">
+  
+</a>
+
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -94,6 +100,7 @@
               
                 <h1 id="wiring">Wiring</h1>
 <p>Now that you've assembled your RLG G1 Neck, it is time to hook everything up!</p>
+<p><img alt="Wiring Diagram" src="../../assets/wiring_diagram.svg" /></p>
 <p>There are only a few things to be noted about how each cable should be connected:</p>
 <ul>
 <li><strong>C1 Cameras</strong><ul>
@@ -106,6 +113,13 @@
 </ul>
 </li>
 <li>U2D2: Make sure the micro USB cable actually has data lines (sometimes they don't)</li>
+<li><strong>Jetson notes</strong><ul>
+<li>The right usb port on the Jetson AGX Thor devkit (port 5a) is sometimes
+  configued as <code>device</code>, making peripherals unable to connect (see diagram <a href="https://docs.nvidia.com/jetson/agx-thor-devkit/user-guide/latest/hardware_layout.html">here</a>) (<a href="https://forums.developer.nvidia.com/t/jetson-agx-thor-developer-kit-type-c-port-issue/372359">more on this</a>).
+  Therefore, <strong>this port should ideally be used for power input only.</strong></li>
+<li><strong>Accuvision</strong>: connect using USB C - A cables to the two USB A ports of the Jetson </li>
+</ul>
+</li>
 </ul>
               
             </div>

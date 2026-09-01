@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
         <link href="../../../language-selector.css" rel="stylesheet" />
+        <link href="../../../logo.css" rel="stylesheet" />
     
       <script>
         // Current page data
         var mkdocs_page_name = "\u914d\u7dda";
-        var mkdocs_page_input_path = "hardware/wiring.en.md";
+        var mkdocs_page_input_path = "hardware/wiring.ja.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -31,8 +32,13 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="../../" class="icon icon-home"> G1 Neck Docs
-        </a>
+<a class="navbar-brand" href="../../">
+  <span class="site-name">G1 Neck Docs</span>
+  
+    <img src="../../../assets/gear.svg" alt="G1 Neck Docs" class="site-logo">
+  
+</a>
+
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="ナビゲーションメニュー">
@@ -50,7 +56,7 @@
               </ul>
               <p class="caption"><span class="caption-text">ハードウェア</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../parts-and-bom/">部品表</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../parts-and-bom/">部品について</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../assembly/">組み立て</a>
                   </li>
@@ -92,20 +98,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="wiring">Wiring</h1>
-<p>Now that you've assembled your RLG G1 Neck, it is time to hook everything up!</p>
-<p>There are only a few things to be noted about how each cable should be connected:</p>
+                <h1 id="_1">配線</h1>
+<p><img alt="配線図" src="../../assets/wiring_diagram.svg" /></p>
+<p>各ケーブルの接続方法について、いくつかの重要な注意事項があります：</p>
 <ul>
-<li><strong>C1 Cameras</strong><ul>
-<li>A usb 3.0 capable hub will probably work for both cameras. Just make sure it has enough bandwidth</li>
+<li><strong>C1カメラ</strong><ul>
+<li>USB 3.0対応ハブは両方のカメラに対応する可能性があります。十分な帯域幅があることを確認してください</li>
 </ul>
 </li>
 <li><strong>Accuvision</strong><ul>
-<li>Hub will probably fail; <strong>Connect directly to Jetson/PC with Superspeed USB capable cables</strong> (the reason for this is still unknown)</li>
-<li>The cameras need their own 5v supply; you can have them both powered by a PD decoy module</li>
+<li>ハブは失敗する可能性があります。<strong>Superspeed USB対応ケーブルを使用してJetson/PCに直接接続してください</strong>（この理由はまだ不明です）</li>
+<li>カメラは独自の5V電源が必要です。PD デコイモジュールで両方に電力を供給できます</li>
 </ul>
 </li>
-<li>U2D2: Make sure the micro USB cable actually has data lines (sometimes they don't)</li>
+<li>U2D2：マイクロUSBケーブルが実際にデータラインを持っていることを確認してください（持っていない場合も意外とあります）</li>
+<li><strong>Jetson に関する注意</strong><ul>
+<li>Jetson AGX Thor devkitの右側のUSBポート（ポート5a）は、<code>device</code>として設定される場合があり、周辺機器が接続できなくなります。（こちらの<a href="https://docs.nvidia.com/jetson/agx-thor-devkit/user-guide/latest/hardware_layout.html">図</a>を参照してください）（<a href="https://forums.developer.nvidia.com/t/jetson-agx-thor-developer-kit-type-c-port-issue/372359">詳細</a>）
+  したがって、<strong>このポートは理想的には電源入力のみに使用する必要があります。</strong></li>
+<li><strong>Accuvision</strong>：USB C - Aケーブルを使用してJetsonの2つのUSB Aポートに接続します</li>
+</ul>
+</li>
 </ul>
               
             </div>

@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="251.23453mm"
+   height="190.01312mm"
+   viewBox="0 0 251.23453 190.01312"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (1:1.4.3+202512261035+0d15f75042)"
+   sodipodi:docname="wiring_diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.94964927"
+     inkscape:cx="466.48801"
+     inkscape:cy="470.17358"
+     inkscape:window-width="2240"
+     inkscape:window-height="1315"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer4"
+     showguides="false" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient9"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop9" />
+      <stop
+         style="stop-color:#b1b1b1;stop-opacity:0.40443426;"
+         offset="0.89600343"
+         id="stop11" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop10" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9"
+       id="radialGradient10"
+       cx="96.573013"
+       cy="7.8259215"
+       fx="96.573013"
+       fy="7.8259215"
+       r="8.3583488"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(14.817795,-13.43352)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9"
+       id="radialGradient10-8"
+       cx="96.573013"
+       cy="7.8259215"
+       fx="96.573013"
+       fy="7.8259215"
+       r="8.3583488"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(14.817795,-13.43352)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="bg"
+     transform="translate(0,-13.094747)">
+    <rect
+       style="fill:#ffffff;stroke-width:1.2;stroke-linejoin:round"
+       id="rect3"
+       width="251.23451"
+       height="190.01312"
+       x="0"
+       y="0"
+       transform="translate(0,13.094747)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="wiring"
+     transform="translate(0,-13.094747)">
+    <g
+       id="g15"
+       transform="translate(0,90.206958)">
+      <path
+         style="fill:#000000;fill-opacity:0.721843;stroke:#ff0000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 46.430731,73.582553 H 36.965495"
+         id="path15" />
+      <path
+         style="fill:none;fill-opacity:0.721843;stroke:#ff0000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 32.049136,35.266222 H 46.430731 V 95.545209 L 204.86056,95.684515"
+         id="path14"
+         sodipodi:nodetypes="cccc" />
+    </g>
+    <path
+       style="fill:#ffffff;fill-opacity:0.721843;stroke:#1e90ff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 26.497599,119.16716 H 79.689806"
+       id="path13"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ffffff;fill-opacity:0.721843;stroke:#1e90ff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 28.571143,156.17432 H 81.76335"
+       id="path13-1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:0.721843;stroke:#0000ff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:4.2, 2.1;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 107.25575,119.16716 h 29.94524"
+       id="path16" />
+    <path
+       style="fill:none;fill-opacity:0.721843;stroke:#0000ff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:4.2, 2.1;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 107.45276,156.17431 H 137.398"
+       id="path16-6" />
+    <path
+       style="fill:none;fill-opacity:0.721843;stroke:#000000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:4.2, 2.1;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 159.15465,93.895418 V 106.27224"
+       id="path17"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:0.721843;stroke:#000000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:4.2, 2.1;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 114.80398,84.39137 h 20.51269"
+       id="path17-1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:0.721843;stroke:#ff0000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 114.80398,57.403629 90.05658,0"
+       id="path17-1-2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:0.721843;stroke:#ff0000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 204.86056,137.67073 H 189.0291"
+       id="path17-6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 71.192372,65.658035 H 26.964038"
+       id="path23" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 69.007152,68.042637 H 24.778818"
+       id="path23-3" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 66.107237,70.429249 H 21.878903"
+       id="path23-4" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 67.090833,72.79644 H 22.862499"
+       id="path23-0" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-13.094747)">
+    <g
+       id="g2"
+       transform="translate(-1.1820493,-18.549294)">
+      <rect
+         style="fill:#75d11e;fill-opacity:1;stroke:#808080;stroke-width:0.696993;stroke-linejoin:round;stroke-opacity:1"
+         id="rect1"
+         width="59.748909"
+         height="62.099991"
+         x="130.46225"
+         y="125.17003" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:none;stroke-width:1;stroke-linejoin:round"
+         x="141.40311"
+         y="158.76003"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1"
+           x="141.40311"
+           y="158.76003">Jetson/PC</tspan></text>
+    </g>
+    <g
+       id="g4"
+       transform="translate(16.871925,-3.568936)">
+      <rect
+         style="fill:#000000;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+         id="rect2"
+         width="47.675964"
+         height="19.306808"
+         x="118.44475"
+         y="78.47908" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:none;stroke-width:1;stroke-linejoin:round"
+         x="127.45547"
+         y="90.707771"
+         id="text1-9"><tspan
+           sodipodi:role="line"
+           id="tspan1-3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1"
+           x="127.45547"
+           y="90.707771">USB Hub</tspan></text>
+    </g>
+    <g
+       id="g4-0"
+       transform="translate(-68.172053,-45.531678)">
+      <rect
+         style="fill:#1e90ff;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+         id="rect2-3"
+         width="47.675964"
+         height="47.281971"
+         x="134.80006"
+         y="92.46666" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:none;stroke-width:1;stroke-linejoin:round"
+         x="150.1114"
+         y="118.68293"
+         id="text1-9-9"><tspan
+           sodipodi:role="line"
+           id="tspan1-3-19"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1"
+           x="150.1114"
+           y="118.68293">U2D2</tspan></text>
+    </g>
+    <g
+       id="g16"
+       transform="translate(0,90.206958)">
+      <g
+         id="g5"
+         transform="translate(47.281962,-24.034997)">
+        <rect
+           style="fill:#ff0000;fill-opacity:1;stroke:#808080;stroke-width:0.833377;stroke-linejoin:round;stroke-opacity:1"
+           id="rect4"
+           width="51.782761"
+           height="28.929815"
+           x="8.1910324"
+           y="38.530293" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:none;stroke-width:1;stroke-linejoin:round"
+           x="14.9195"
+           y="55.535206"
+           id="text1-9-5"><tspan
+             sodipodi:role="line"
+             id="tspan1-3-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1"
+             x="14.9195"
+             y="55.535206">Decoder 1</tspan></text>
+      </g>
+      <g
+         id="g6"
+         transform="translate(46.099912,12.972152)">
+        <rect
+           style="fill:#ff0000;fill-opacity:1;stroke:#808080;stroke-width:0.833377;stroke-linejoin:round;stroke-opacity:1"
+           id="rect4-6"
+           width="51.782761"
+           height="28.929815"
+           x="9.5700893"
+           y="38.530293" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#ffffff;stroke:none;stroke-width:1;stroke-linejoin:round"
+           x="16.298557"
+           y="55.535206"
+           id="text1-9-5-4"><tspan
+             sodipodi:role="line"
+             id="tspan1-3-1-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke-width:1"
+             x="16.298557"
+             y="55.535206">Decoder 2</tspan></text>
+      </g>
+      <g
+         id="g12"
+         transform="translate(-84.597684,34.567801)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+           id="rect6"
+           width="24.034998"
+           height="24.034998"
+           x="99.373299"
+           y="-17.625097" />
+        <circle
+           style="fill:#000000;fill-opacity:1;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+           id="path6"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="12.707026" />
+        <circle
+           style="fill:url(#radialGradient10);stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path9"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="8.3583488" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#9a7965;stroke-width:0.6;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path7"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="8.7013035" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#696969;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path8"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="4.2060199" />
+        <path
+           id="path11"
+           style="fill:#ffffff;fill-opacity:0.721843;stroke-width:2.73522;stroke-linejoin:round"
+           d="m 122.53763,-5.8862099 c 0,6.33064907 -5.14427,11.4626527 -11.49004,11.4626479 6.86153,-1.9372941 9.38869,-5.05685307 11.49004,-11.4626479 z"
+           sodipodi:nodetypes="ccc" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path12"
+           cx="74.837601"
+           cy="-74.830353"
+           rx="1.8832012"
+           ry="2.5167215"
+           transform="rotate(38.663331)" />
+      </g>
+      <g
+         id="g12-2"
+         transform="translate(-84.597684,71.574958)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+           id="rect6-4"
+           width="24.034998"
+           height="24.034998"
+           x="99.373299"
+           y="-17.625097" />
+        <circle
+           style="fill:#000000;fill-opacity:1;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+           id="path6-0"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="12.707026" />
+        <circle
+           style="fill:url(#radialGradient10-8);stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path9-6"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="8.3583488" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#9a7965;stroke-width:0.6;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path7-2"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="8.7013035" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#696969;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path8-9"
+           cx="111.3908"
+           cy="-5.6075983"
+           r="4.2060199" />
+        <path
+           id="path11-9"
+           style="fill:#ffffff;fill-opacity:0.721843;stroke-width:2.73522;stroke-linejoin:round"
+           d="m 122.53763,-5.8862099 c 0,6.33064907 -5.14427,11.4626527 -11.49004,11.4626479 6.86153,-1.9372941 9.38869,-5.05685307 11.49004,-11.4626479 z"
+           sodipodi:nodetypes="ccc" />
+        <ellipse
+           style="fill:#ffffff;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           id="path12-0"
+           cx="74.837601"
+           cy="-74.830353"
+           rx="1.8832012"
+           ry="2.5167215"
+           transform="rotate(38.663331)" />
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="210.11832"
+       y="183.58942"
+       id="text17"><tspan
+         sodipodi:role="line"
+         id="tspan17"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+         x="210.11832"
+         y="183.58942">5V</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+         x="210.11832"
+         y="190.64497"
+         id="tspan18">(PD Decoy)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="210.11832"
+       y="55.249897"
+       id="text17-2"><tspan
+         sodipodi:role="line"
+         id="tspan17-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+         x="210.11832"
+         y="55.249897">12V</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+         x="210.11832"
+         y="62.305447"
+         id="tspan18-5">(AC Adapter)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="210.03366"
+       y="139.73096"
+       id="text17-3"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+         x="210.03366"
+         y="139.73096"
+         id="tspan18-1">USB PD</tspan></text>
+    <g
+       id="g26"
+       transform="translate(-16.15467,2.7581144)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="26.671206"
+         y="28.55175"
+         id="text17-3-6"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+           x="26.671206"
+           y="28.55175"
+           id="tspan18-1-2">Key</tspan></text>
+      <g
+         id="g25"
+         transform="translate(0,-0.0890981)">
+        <rect
+           style="fill:#f5f5f5;fill-opacity:1;stroke:#a9a9a9;stroke-width:1.2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect23"
+           width="116.82585"
+           height="17.533728"
+           x="43.144791"
+           y="18.32176"
+           ry="5.3192205" />
+        <g
+           id="g24"
+           transform="translate(32.506349,0.9073746)">
+          <path
+             style="fill:none;fill-opacity:0.721843;stroke:#0000ff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:4.2, 2.1;stroke-dashoffset:0;stroke-opacity:1"
+             d="M 43.801623,26.181249 H 66.851225"
+             id="path16-2"
+             sodipodi:nodetypes="cc" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             x="16.379629"
+             y="28.241474"
+             id="text17-3-5"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+               x="16.379629"
+               y="28.241474"
+               id="tspan18-1-8">USB 3.0</tspan></text>
+        </g>
+        <g
+           id="g24-4"
+           transform="translate(92.728888,0.9073746)">
+          <path
+             style="fill:none;fill-opacity:0.721843;stroke:#000000;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:4.2, 2.1;stroke-dashoffset:0;stroke-opacity:1"
+             d="M 30.011051,26.181249 H 53.060653"
+             id="path16-2-1"
+             sodipodi:nodetypes="cc" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0.721843;stroke:none;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             x="16.379629"
+             y="28.241474"
+             id="text17-3-5-0"><tspan
+               sodipodi:role="line"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'JetBrains Mono';-inkscape-font-specification:'JetBrains Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.1"
+               x="16.379629"
+               y="28.241474"
+               id="tspan18-1-8-4">USB</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g23"
+       transform="translate(3.9005629,1.3930582)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#808080;stroke-width:0.926688;stroke-linejoin:round;stroke-opacity:1"
+         id="rect6-6"
+         width="18.198061"
+         height="27.260435"
+         x="34.694401"
+         y="57.390377" />
+      <circle
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+         id="path6-9"
+         cx="43.79343"
+         cy="65.848572"
+         r="6.7517023" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path19"
+         cx="43.79343"
+         cy="65.848572"
+         r="1.9700817" />
+      <g
+         id="g20"
+         transform="rotate(45,26.875485,59.444808)"
+         inkscape:transform-center-x="0.17413227"
+         inkscape:transform-center-y="-7.5573406">
+        <path
+           style="fill:#dcdcdc;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 42.233627,52.010159 H 44.49922"
+           id="path20" />
+        <path
+           style="fill:#dcdcdc;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 43.366423,53.142955 V 50.877362"
+           id="path20-5" />
+      </g>
+      <circle
+         style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path21"
+         cx="43.79343"
+         cy="61.616703"
+         r="0.7835952" />
+      <circle
+         style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path21-3"
+         cx="43.79343"
+         cy="69.819786"
+         r="0.7835952" />
+      <g
+         id="g22"
+         transform="translate(0.02375777)">
+        <circle
+           style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path21-31"
+           cx="-65.848572"
+           cy="39.668133"
+           r="0.7835952"
+           transform="rotate(-90)" />
+        <circle
+           style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path21-3-4"
+           cx="-65.848572"
+           cy="47.871212"
+           r="0.7835952"
+           transform="rotate(-90)" />
+      </g>
+    </g>
+    <g
+       id="g23-2"
+       transform="translate(-21.914527,1.3930582)">
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#808080;stroke-width:0.926688;stroke-linejoin:round;stroke-opacity:1"
+         id="rect6-6-6"
+         width="18.198061"
+         height="27.260435"
+         x="34.694401"
+         y="57.390377" />
+      <circle
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#808080;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+         id="path6-9-4"
+         cx="43.79343"
+         cy="65.848572"
+         r="6.7517023" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path19-1"
+         cx="43.79343"
+         cy="65.848572"
+         r="1.9700817" />
+      <g
+         id="g20-2"
+         transform="rotate(45,26.875485,59.444808)"
+         inkscape:transform-center-x="0.17413227"
+         inkscape:transform-center-y="-7.5573406">
+        <path
+           style="fill:#dcdcdc;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 42.233627,52.010159 H 44.49922"
+           id="path20-8" />
+        <path
+           style="fill:#dcdcdc;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 43.366423,53.142955 V 50.877362"
+           id="path20-5-8" />
+      </g>
+      <circle
+         style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path21-9"
+         cx="43.79343"
+         cy="61.616703"
+         r="0.7835952" />
+      <circle
+         style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path21-3-2"
+         cx="43.79343"
+         cy="69.819786"
+         r="0.7835952" />
+      <g
+         id="g22-8"
+         transform="translate(0.02375777)">
+        <circle
+           style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path21-31-8"
+           cx="-65.848572"
+           cy="39.668133"
+           r="0.7835952"
+           transform="rotate(-90)" />
+        <circle
+           style="fill:#808080;fill-opacity:1;stroke:#a9a9a9;stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path21-3-4-8"
+           cx="-65.848572"
+           cy="47.871212"
+           r="0.7835952"
+           transform="rotate(-90)" />
+      </g>
+    </g>
+  </g>
+</svg>
