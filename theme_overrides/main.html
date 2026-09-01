@@ -30,14 +30,9 @@
 </a>
 {% endblock %}
 
-<!--Favicon-->
-{% block extrahead %}
-  {{ super() }}
-  <link rel="icon" type="image/x-icon" href="{{ 'assets/favicon/favicon.ico' | url }}">
-{% endblock %}
-
-<!--Google Search-->
+<!--Favicon and google search-->
 {% block extrahead %}
   {{ super() }}
   <meta name="google-site-verification" content="UR96oWwcq_FRqXclrTIKRbeb9vKB7EIljkiQRfXTbTs" />
+  <link rel="icon" type="image/x-icon" href="{{ 'assets/favicon/favicon.ico' | url }}">
 {% endblock %}
